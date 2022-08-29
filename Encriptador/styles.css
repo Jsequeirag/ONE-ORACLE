@@ -1,0 +1,106 @@
+* {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #fff;
+}
+header {
+  height: 10vh;
+  padding: 15px 20px;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 90vh;
+  min-width: auto;
+}
+textarea {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.txta-mensaje {
+  background-image: url("imagenes/muneco.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+button {
+  width: 100%;
+  margin-top: 15px;
+}
+.button-group {
+  display: flex;
+  justify-content: center;
+}
+.btn-scale:hover {
+  transform: scale(1.1);
+}
+.btn-hover:hover {
+  background-color: rgb(160, 160, 250) !important;
+}
+.btn-copiar {
+  position: relative;
+  background-color: rgb(185, 185, 185);
+  border-radius: 3px;
+}
+
+.btn-encriptar {
+  background-color: rgb(75, 75, 253);
+  border-radius: 3px;
+  margin-right: 15px;
+}
+.btn-desencriptar {
+  background-color: rgb(202, 202, 255);
+  border-radius: 3px;
+  margin-left: 15px;
+}
+
+#span-info {
+  border-radius: 5px;
+  background-color: rgb(253, 192, 188);
+  width: fit-content;
+  text-align: center;
+  margin: 5px 0px;
+  padding: 5px;
+  font-size: 15px;
+}
+.section-desencriptar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 30px;
+  width: 100%;
+}
+.section-encriptar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 30px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  main {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 10px;
+  }
+  .section-encriptar {
+    margin: 50px 0px;
+    width: 100%;
+  }
+  .section-desencriptar {
+    margin: 50px 0px;
+    width: 100%;
+  }
+}
